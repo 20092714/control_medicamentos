@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+    <head>
+        <title>Usuarios</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS v5.3.8 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+        </header>
+        <main class="content-wrapper">
+            <!-- Form Section -->
+            <section class="form-section panel">
+                <h2><i class="fa-solid fa-user-plus"></i> Registrar Usuario</h2>
+                
+                <div id="alertBox" class="alert hidden"></div>
+                
+                <form id="userForm">
+                    <input type="hidden" id="userId">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <div class="input-wrapper">
+                            <i class="fa-regular fa-user"></i>
+                            <input type="text" id="nombre" placeholder="Ej. Juan Pérez" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="edad">Edad</label>
+                        <div class="input-wrapper">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="text" id="edad" placeholder="67" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="condicion">Condicion</label>
+                        <div class="input-wrapper">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="text" id="condicion" placeholder="Asma" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" id="btnGuardar" class="btn btn-primary">
+                            <i class="fa-solid fa-save"></i> Guardar
+                        </button>
+                        <button type="button" id="btnCancelar" class="btn btn-secondary hidden">
+                            <i class="fa-solid fa-times"></i> Cancelar Edición
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Table Section -->
+            <section class="data-section panel">
+                <div class="section-header">
+                    <h2><i class="fa-solid fa-users"></i> Lista de Usuarios</h2>
+                    <span class="badge" id="totalUsers">0</span>
+                </div>
+                
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Id_paciente</th>
+                                <th>Nombre_paciente</th>
+                                <th>Edad</th>
+                                <th>Condicion</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="usersList">
+                            <!-- Datos inyectados por JS -->
+                            <tr>
+                                <td colspan="4" class="text-center loading"><i class="fa-solid fa-spinner fa-spin"></i> Cargando usuarios...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
