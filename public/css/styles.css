@@ -1,0 +1,146 @@
+body {
+    margin:0; 
+    font-family:Arial, sans-serif;
+    background:  #bbc3e7;
+    height: 100vh;
+
+}
+
+.login-page {
+    display: flex; /* centra todo en la pagina */
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px; /*bordes suaves */
+    width: 300px;
+    text-align: center;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* sombreado*/
+}
+
+.login-container h2{
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.login-container button{
+    width: 100%;
+    padding: 10px;
+    background: #c084fc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-container button:hover { /* animacion cuando pasa el mouse*/
+    background: #a855f7;
+}
+
+input:focus {
+    outline: none; 
+    border-color: #c084fc;
+}
+
+/* CONTENEDOR GENERAL */
+.content-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+}
+
+/* PANEL (CARDS BONITAS) */
+.panel {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
+}
+
+/* TITULOS */
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* FORMULARIO */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    background: #f1f5f9;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+.input-wrapper input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+}
+
+/* BOTONES */
+.form-actions {
+    margin-top: 15px;
+}
+
+/* TABLA */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.data-table th {
+    background: #f1f5f9;
+    padding: 12px;
+}
+
+.data-table td {
+    padding: 12px;
+    border-top: 1px solid #eee;
+}
+
+.data-table tr:hover {
+    background: #f9fbff;
+}
+
+/* HEADER DE TABLA */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* BADGE */
+.badge {
+    background: #3b82f6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+/* LOADING */
+.loading {
+    color: gray;
+}
